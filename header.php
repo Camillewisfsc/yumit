@@ -45,8 +45,8 @@
 
             </a>
             </li>
-            <button type="button" class="btnnav1">s'inscrire</button>
-            <button type="button" class="btnnav2">se connecter</button>
+            <button type="button" class="nav-btn btnnav1">s'inscrire</button>
+            <button type="button" class="nav-btn btnnav2">se connecter</button>
         </ul>
 
     </header>
