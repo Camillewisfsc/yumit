@@ -6,7 +6,7 @@ get_header();
     <h1>Login Page</h1>
 
     <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
+        <div id="home" class="tab-panel">
             <div class="inscriptionContent">
 
                 <br>
@@ -51,9 +51,9 @@ get_header();
 
             </div>
         </div>
-       
-    </div>
 
+    </div>
+    
 </div>
 
 <?php get_footer(); ?>

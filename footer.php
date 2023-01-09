@@ -30,7 +30,7 @@
         <h4>Mentions légales</h4>
 
         <ul>
-          <li><a href="#">Qui sommes-nous?</a></li>
+          <li><a href="/legal">Qui sommes-nous?</a></li>
         </ul>
       </div>
 
