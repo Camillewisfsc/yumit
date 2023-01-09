@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <body>
-    <div class="banner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bgcom.png)">
+    <div class="banner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bgcom-resize.jpg)">
         <div class="container">
             <!-- Barre de recherche -->
             <form class="form-inline" action="/recherche/" method="get">
