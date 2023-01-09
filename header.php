@@ -12,13 +12,17 @@
     <?php wp_head(); ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
 
     <header class="d-flex justify-content-between">
-
-        <img class="logopc" src="<?php echo get_template_directory_uri(); ?>/images/logopc.png" alt="logopc">
+        <a href="https://yum-it.emu.isfsc.be/">
+            <img class="logopc" src="<?php echo get_template_directory_uri(); ?>/images/logopc.png" alt="logopc">
+        </a>
         <!-- Barre Nav -->
 
         <ul class="nav justify-content-end align-items-center">
@@ -30,7 +34,7 @@
             </li>
 
             <li class="nav-item favorites">
-                <a class="nav-link" aria-current="page" href="<?php echo home_url() . "/home/";  ?>">
+                <a class="nav-link" aria-current="page" href="<?php echo home_url() . "/favoris/";  ?>">
                     <span class="nav-link-icon"></span>
                     <span class="nav-link-text">favoris</span>
                 </a>
@@ -45,8 +49,8 @@
 
             </a>
             </li>
-            <button type="button" class="btnnav1">s'inscrire</button>
-            <button type="button" class="btnnav2">se connecter</button>
+            <a  href="<?php echo home_url() . "/sinscrire/";  ?>" class="nav-btn btnnav1">s'inscrire</a>
+            <a  href="<?php echo home_url() . "/se-connecter/";  ?>" class="nav-btn btnnav2">se connecter</a>
         </ul>
 
     </header>

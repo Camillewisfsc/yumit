@@ -1,4 +1,4 @@
-html {
+body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -6,7 +6,7 @@ html {
 h1 {
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 30px;
     line-height: 80px;
     font-family: 'Poppins', sans-serif;
 
@@ -18,10 +18,10 @@ h1 {
 
 /* Barre nav */
 .banner {
-    width: 100%;
-    height: 850px;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 50px;
+
 }
 
 .banner .container {
@@ -30,27 +30,71 @@ h1 {
     align-items: center;
 }
 
-.btnnav2 {
-    width: 200px;
-    height: 42px;
+.nav-btn {
+    width: 73px;
+    height: 21px;
     border-radius: 19px;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnnav2 {
     border-color: white;
     border: 1px solid #FFFFFF;
     background: transparent;
-    color: white;
-    margin: 0;
     margin-left: 20px;
+
 }
 
 /* S'inscire */
 .btnnav1 {
-    width: 200px;
-    height: 42px;
-    border-radius: 19px;
     border: none;
     background-color: #D52200;
-    color: white;
 }
+
+.btnnav1:hover {
+    color: #FFFFFF;
+}
+
+/* page login  */
+/* page sign up  */
+
+.inscriptionContent {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.headerTitleTable {
+    width: 100%;
+    text-align: center;
+    color: #D52200;
+    margin: 30px auto;
+}
+
+.headerTitleSelected {
+    border-bottom: solid 1px #D52200;
+
+}
+
+.myInput {
+    border: none;
+    border-bottom: 1px #D52200 solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 400px;
+}
+
+.myInput:focus {
+    border: none;
+    border-bottom: 1px #D52200 solid;
+}
+
 
 /* Se connecter */
 .btnnav2:hover {
@@ -85,6 +129,7 @@ h1 {
 /* profile */
 .nav-item.profile .nav-link .nav-link-icon {
     background-image: url('../icons/Groupe\ 128.svg');
+    transition: all .2s;
 }
 
 .nav-item.profile .nav-link:hover .nav-link-icon {
@@ -99,6 +144,7 @@ h1 {
 
 .nav-item.favorites .nav-link:hover .nav-link-icon {
     background-image: url('../icons/favoris-outline.svg');
+    transition: all .2s;
 }
 
 /* commerce */
@@ -108,11 +154,13 @@ h1 {
 
 .nav-item.commerces .nav-link:hover .nav-link-icon {
     background-image: url('../icons/commerce-outline.svg');
+    transition: all .2s;
 }
 
 .input-group {
     column-gap: 30px;
     justify-content: center;
+
 }
 
 /* Barre de recherche */
@@ -125,8 +173,8 @@ h1 {
 
 /* icône barre de recherche */
 .localisation {
-    width: 28px;
-    height: 28px;
+    width: 11px;
+    height: 11px;
     position: absolute;
     left: 21px;
 }
@@ -139,25 +187,26 @@ h1 {
 
 
 .form-inline input {
-    width: 746px;
     background-color: #FFF7F7BE;
     border-radius: 33px;
-    height: 65px;
     padding-left: 105px;
+    width: 227px;
+    height: 31px;
 }
 
 .form-inline input::placeholder {
-    font-size: 19px;
+    font-size: 10px;
 }
 
 .boutoncommerce {
-    width: 201px;
-    height: 65px;
+    width: 117px;
+    height: 31px;
     background: #D52200 0% 0% no-repeat padding-box;
     border-radius: 33px;
     border: none;
     color: white;
     transition: all .4s ease-in-out;
+    font-size: 10px;
 }
 
 .boutoncommerce:hover {}
@@ -165,6 +214,7 @@ h1 {
 h2 {
     color: #D52200;
     margin-top: 100px;
+    font-size: 14px;
 }
 
 .fonction-titre {
@@ -180,8 +230,8 @@ h2 {
 }
 
 .logopc {
-    width: 180px;
-    height: 71px;
+    width: 90px;
+    height: 35px;
 }
 
 .commerce {
@@ -220,7 +270,6 @@ h2 {
 }
 
 
-
 .rec {
     display: flex;
     justify-content: flex-start;
@@ -236,6 +285,8 @@ section.section-main {
 
 header {
     background-color: #A6B55E;
+    height: 48px;
+    padding-right: 10px;
 }
 
 .nav-link {
@@ -330,12 +381,65 @@ footer .icones {
 /* Page profil */
 
 .femme {
-    top: 250px;
-    left: 908px;
     width: 206px;
     height: 218px;
+    display: block;
+    margin: auto;
 
 }
+
+.prenom {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.emailprofil {
+    color: #A5A1A1;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.infosprofil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+    margin-bottom: 40px;
+}
+
+.profile-input {
+    width: 431px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    border-radius: 19px;
+    background-color: #FAF5F6;
+    border: none;
+
+    /* align-content: center; */
+}
+
+
+.input-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.infosprofil span {
+    color: #D52200;
+
+}
+
+.profile-input-icon {
+    position: absolute;
+    left: 10px;
+
+}
+
+
 
 .boutondeconnexion {
     width: 214px;
@@ -344,7 +448,9 @@ footer .icones {
     border-radius: 19px;
     background: transparent;
     color: black;
-    margin-left: 80%
+    margin-left: 80%;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 
 .boutondeconnexion:hover {
@@ -374,32 +480,6 @@ footer .icones {
 
 .form-inline {
     padding-top: 150px;
-
-}
-
-
-.form-inline input {
-    width: 746px;
-    background-color: #FFF7F7BE;
-    border-radius: 33px;
-    height: 65px;
-    padding-left: 105px;
-
-}
-
-.form-inline input::placeholder {
-    font-size: 19px;
-}
-
-.boutoncommerce {
-    width: 201px;
-    height: 65px;
-    background: #D52200 0% 0% no-repeat padding-box;
-    border-radius: 33px;
-    border: none;
-    color: white;
-    transition: all .4s ease-in-out;
-
 
 }
 
@@ -435,37 +515,7 @@ footer .icones {
 
 }
 
-.form-inline input::placeholder {
-    font-size: 19px;
 
-}
-
-
-.listecommerces {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    margin: 150px auto 250px;
-}
-
-
-
-.card-store-title {
-    font-size: 17px;
-
-}
-
-.card-store-text {
-    font-size: 15px;
-    color: #CBC5C5;
-    margin-bottom: 0;
-}
-
-.card-store-img {
-    width: 273px;
-    height: 205px;
-
-}
 
 .fav-icon {
     background-image: url('../icons/fav-vide.svg');
@@ -474,4 +524,163 @@ footer .icones {
 
 .fav-icon:hover {
     background-image: url('../icons/fav-rempli.svg');
+}
+
+
+
+.card {
+    text-decoration: none;
+    border: none;
+
+}
+
+.card-title {
+    color: black;
+    font-size: 17px;
+}
+
+.card-body {
+    padding: 10px 0 0 0;
+}
+
+.card-specialites {
+    color: #CBC5C5;
+    font-size: 15px;
+}
+
+.card-distance {
+    color: #CBC5C5;
+    padding: 0;
+    font-size: 15px;
+}
+
+.card-img-top {
+    height: 205px;
+    object-fit: cover;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 250px;
+}
+
+
+
+
+/* Page Favorites */
+.shopsContent {
+    margin: auto;
+    width: 90%;
+    background-color: white;
+}
+
+.shopsContent li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.searchContent {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchContent div img {
+    width: 28px;
+    height: 28px;
+}
+
+.searchContent div select {
+    border: 0px;
+}
+
+.searchContent div select:active {
+    border: 0px;
+}
+
+.searchContent div select:enabled {
+    border: 0px;
+}
+
+.headFavorites {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 70%;
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .nav {}
+
+    .card-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .logopc {
+        width: 180px;
+        height: 71px;
+    }
+
+
+    .nav-btn {
+        width: 200px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    header {
+        height: 71px;
+
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .localisation {
+        width: 28px;
+        height: 28px;
+    }
+
+    .form-inline input {
+        width: 746px;
+        height: 65px;
+    }
+
+    .form-inline input::placeholder {
+        font-size: 19px;
+    }
+
+    .boutoncommerce {
+        width: 201px;
+        height: 65px;
+        font-size: 15px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
