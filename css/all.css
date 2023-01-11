@@ -116,6 +116,10 @@ h1 {
   transition: all 0.4s ease-in-out;
 }
 
+.login-title {
+  padding-left: 100px;
+}
+
 /* Iôcone - nav */
 
 .nav-item {
@@ -654,7 +658,13 @@ footer .icones {
   margin: 50px auto 250px;
 }
 
+
 /* Page Favorites */
+
+.fav-title {
+  padding-left: 100px;
+}
+
 .shopsContent {
   margin: auto;
   width: 90%;
@@ -841,11 +851,9 @@ footer .icones {
 
 #single-post .store-map {
   margin: 17px auto 105px;
+  margin-right: ;
 }
 
-#single-post .store-map img {
-  max-width: 100%;
-}
 
 @media screen and (min-width: 768px) {
   .nav {}

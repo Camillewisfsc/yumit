@@ -1,9 +1,7 @@
 <?php
-/* Template Name: registerPage */
+/* Template Name: inscription-page */
 get_header();
 ?>
-
-
 
 <div class="container">
     <h2 style="color: #D52200 ; font-size: 20px">Inscription</h2>
@@ -14,7 +12,7 @@ get_header();
             <button class="nav-link active" id="consomateur" data-bs-toggle="tab" data-bs-target="#consomateur-pane" type="button" role="tab" aria-controls="consomateur-pane" aria-selected="true">Consomateur</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="commercant-tab" data-bs-toggle="tab" data-bs-target="#commercant-tab-pane" type="button" role="tab" aria-controls="commercant-tab-pane" aria-selected="false">Commercant</button>
+            <button class="nav-link" id="commercant-tab" data-bs-toggle="tab" data-bs-target="#commercant-tab-pane" type="button" role="tab" aria-controls="commercant-tab-pane" aria-selected="false">Commerçant</button>
         </li>
     </ul>
 
@@ -103,7 +101,7 @@ get_header();
 
             <div>
                 <div>
-                    <label for="Confirmation">Nom</label>
+                    <label for="name">Confirmation</label>
                 </div>
                 <div>
                     <input type="text" class="myInput" id="name" placeholder="Entrez à nouveau votre mot de passe" required>
@@ -111,15 +109,6 @@ get_header();
             </div>
             <br>
 
-            <div>
-                <div>
-                    <label for="name">Nom</label>
-                </div>
-                <div>
-                    <input type="text" class="myInput" id="name" placeholder="Entre votree nom" required>
-                </div>
-            </div>
-            <br>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
@@ -130,7 +119,7 @@ get_header();
             <table style="margin-right: auto; margin-left: auto">
                 <tr>
                     <td>
-                        <button type="button" class="btn btn-danger">S'inscrire</button>
+                        <button type="button" class="boutondeconnexion">S'inscrire</button>
                     </td>
                 </tr>
             </table>
@@ -148,7 +137,7 @@ get_header();
             <table style="margin-right: auto; margin-left: auto; text-align: center">
                 <tr>
                     <td>
-                        <img src="https://img.freepik.com/premium-vector/mockup-iphone-10-10s-11-11pro-new-iphone-12-12pro-12-mini-mock-up-screen-iphone-vector-illustration_561158-87.jpg?w=2000" width="300px" height="500px">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/application.png)" width="300px" height="500px">
                     </td>
                 </tr>
                 <tr>
@@ -159,14 +148,13 @@ get_header();
                 <tr>
                     <td>
                         <br>
-                        La version APP a été concue uniquement pour les commercant ! Télécharge la pour mettre à jkour ta liste de produits invenuds en un seul clic !
+                        La version APP a été concue uniquement pour les commerçants ! Télécharge-la pour mettre à jour ta liste de produits invenuds en un seul clic !
                         <br>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-</div>
 </div>
 
 
