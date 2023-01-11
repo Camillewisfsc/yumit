@@ -1,9 +1,9 @@
 <?php
-/* Template Name: loginPage */
+/* Template Name: connexion-page */
 get_header();
 ?>
 <div>
-    <h1>Login Page</h1>
+    <h2 class="login-title">Connexion</h2>
 
     <div class="tab-content">
         <div id="home" class="tab-panel">
@@ -17,10 +17,10 @@ get_header();
 
                             <div>
                                 <div>
-                                    <label for="name">Nom</label>
+                                    <label for="name">Adresse Mail</label>
                                 </div>
                                 <div>
-                                    <input type="text" class="myInput" id="name" placeholder="Entrez votre nom" required>
+                                    <input type="text" class="myInput" id="name" placeholder="Entrez votre e-mail" required>
                                 </div>
                             </div>
                             <br>
@@ -39,7 +39,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>
-                            <button type="button" class="btn btn-danger">Se connecter</button>
+                            <button type="button" class="boutondeconnexion">Se connecter</button>
                         </td>
                     </tr>
                 </table>

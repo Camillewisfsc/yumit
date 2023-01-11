@@ -1,12 +1,12 @@
 <?php
-/* Template Name: favoritesPage */
+/* Template Name: favoris-page */
 
 get_header();
 ?>
 
 <div class="headFavorites">
     <div>
-        <h2>commerces favoris</h2>
+        <h2 class="fav-title">Commerces favoris</h2>
 
     </div>
     <div>
@@ -41,8 +41,6 @@ get_header();
                 <p class="card-distance">2km</p>
             </div>
         </li>
-    
-        <li>
         <li class="card" style="width: 18rem;">
             <img class="card-img-top" alt="Au Croquant" src="<?php echo get_template_directory_uri(); ?>/images/aucroquant.png)">
             <div class="card-body">
@@ -51,7 +49,6 @@ get_header();
                 <p class="card-distance">3km</p>
             </div>
         </li>
-         
         <li class="card" style="width: 18rem;">
             <img class="card-img-top" alt="Comptoir Bio" src="<?php echo get_template_directory_uri(); ?>/images/comptoirbio.png)">
             <div class="card-body">
@@ -60,7 +57,7 @@ get_header();
                 <p class="card-distance">1km</p>
             </div>
         </li>
-
     </ul>
 </div>
+
 <?php get_footer(); ?>
